@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>homework4_git</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="bower/normalize-css/normalize.css"/>
 </head>
 <body>
-<div class="container">
+<div class="main_cont">
     <header>
         <div class="telephone">
             <a href="#"><img src="img/handset.png" alt="phone"></a>
@@ -57,20 +66,144 @@
             <img class="findDisc" src="img/findDisc.jpg" alt="findDisc"/>
     </section>
     <nav class="katalog">
-        <div class="products">
-            <a href="#">каталог продукции:</a>
-        </div>
+        <a href="#" class="mainframe">каталог продукции:</a>
+        <a href="#" class="goodsframe">шины</a>
+        <ul class="main_ul">
+            <li><a href="#"><span>Наименование 1</span></a></li>
+            <li><a href="#"><span>Наименование 2</span></a></li>
+            <li><a href="#"><span>Наименование 3</span></a></li>
+            <li><a href="#"><span>Наименование 4</span></a></li>
+        </ul>
+
+        <a href="#" class="goodsframe">диски</a>
+        <ul class="main_ul">
+            <li><a href="#"><span>Наименование 1</span></a></li>
+            <li><a href="#"><span>Наименование 2</span></a></li>
+            <li><a href="#"><span>Наименование 3</span></a></li>
+            <li><a href="#"><span>Наименование 4</span></a></li>
+        </ul>
+        <a href="#" class="goodsframe">болты</a>
+        <ul class="main_ul">
+            <li><a href="#"><span>Наименование 1</span></a></li>
+            <li><a href="#"><span>Наименование 2</span></a></li>
+            <li><a href="#"><span>Наименование 3</span></a></li>
+            <li><a href="#"><span>Наименование 4</span></a></li>
+        </ul>
 
     </nav>
-    <main></main>
-    <aside></aside>
-    <footer></footer>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 column">
+                    <figure class="fig_left">
+                        <figcaption><span>Goodyear</span>Ultra Grip Extreme</figcaption>
+                        <a href="#"><img src="img/Goodear.png" alt="Goodear"/></a>
+                        <figcaption class="price">90.00 грн.</figcaption>
+                    </figure>
+                    <figure class="fig_left">
+                        <figcaption><span>Goodyear</span>Ultra Grip Extreme</figcaption>
+                        <a href="#"><img src="img/Goodear.png" alt="Goodear"/></a>
+                        <figcaption class="price">90.00 грн.</figcaption>
+                    </figure>
+                    <figure class="fig_left">
+                        <figcaption><span>Goodyear</span>Ultra Grip Extreme</figcaption>
+                        <a href="#"><img src="img/Goodear.png" alt="Goodear"/></a>
+                        <figcaption class="price">90.00 грн.</figcaption>
+                    </figure>
+
+                </div>
+                <div class="col-md-4 column">
+                    <figure class="fig_center">
+                        <figcaption><span>Nokian</span>Hakkapeliitta R</figcaption>
+                        <a href="#"><img src="img/NokianHakkapeliittaR.png" alt="Nokian"/></a>
+                        <figcaption class="price">115.00 грн.</figcaption>
+                    </figure>
+                    <figure class="fig_center">
+                        <figcaption><span>Nokian</span>Hakkapeliitta R</figcaption>
+                        <a href="#"><img src="img/NokianHakkapeliittaR.png" alt="Nokian"/></a>
+                        <figcaption class="price">115.00 грн.</figcaption>
+                    </figure>
+                    <figure class="fig_center">
+                        <figcaption><span>Nokian</span>Hakkapeliitta R</figcaption>
+                        <a href="#"><img src="img/NokianHakkapeliittaR.png" alt="Nokian"/></a>
+                        <figcaption class="price">115.00 грн.</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 column">
+                    <figure class="fig_right">
+                        <figcaption><span>Hankook</span>K 708 155/65 R14 </figcaption>
+                        <a href="#"><img src="img/Hankook.png" alt="Hankook"/></a>
+                        <figcaption class="price">393.00 грн.</figcaption>
+                    </figure>
+                    <figure class="fig_right">
+                        <figcaption><span>Hankook</span>K 708 155/65 R14 </figcaption>
+                        <a href="#"><img src="img/Hankook.png" alt="Hankook"/></a>
+                        <figcaption class="price">393.00 грн.</figcaption>
+                    </figure>
+                    <figure class="fig_right">
+                        <figcaption><span>Hankook</span>K 708 155/65 R14 </figcaption>
+                        <a href="#"><img src="img/Hankook.png" alt="Hankook"/></a>
+                        <figcaption class="price">393.00 грн.</figcaption>
+                    </figure>
+                </div>
 
 
 
+
+
+            </div>
+        </div>
+
+    </main>
+    <aside>
+        <a href="#" class="mainframe_right">бренды:</a>
+        <a href="#" class="goodsframe_right">шины</a>
+        <form action="">
+            <p><input type="checkbox" name="a" value="1417"> бренд 1</p>
+            <p><input type="checkbox" name="a" value="1680"> бренд 2</p>
+            <p><input type="checkbox" name="a" value="1883" checked> бренд 3</p>
+            <a href="#" class="goodsframe_right bottomframe">диски</a>
+            <p><input type="checkbox" name="a" value="1934"> бренд 1</p>
+            <p><input type="checkbox" name="a" value="2010"> бренд 2</p>
+            <p><input type="checkbox" name="a" value="2010"> бренд 3</p>
+            <a href="#"class="submit">выбрать</a>
+        </form>
+
+
+
+
+    </aside>
+    <footer>
+        <div class="first_sec">
+            <img src="img/tovo.png" alt="tovo"/>
+            <img src="img/brig.png" alt="brig"/>
+            <img src="img/cont.png" alt="cont"/>
+            <img src="img/oper.png" alt="oper"/>
+            <img src="img/avon.png" alt="avon"/>
+            <img src="img/tire.png" alt="tire"/>
+            <img src="img/pirr.png" alt="pirr"/>
+            <img src="img/dunl.png" alt="dunl"/>
+        </div>
+        <div class="second_sec">
+            <ul class="ul_head">
+                <li class="left_li"><a href="#">О компании  </a></li>
+                <li class="left_li"><a href="#"> Доставка</a></li>
+                <li class="left_li"><a href="#">Статьи</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <img src="img/mark.png" alt="mark"/>
+        </div>
+
+    </footer>
 
 
 </div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
 
 <script src="bower/jquery/dist/jquery.js"></script>
 </body>
